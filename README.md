@@ -1,3 +1,31 @@
+# wordpress-dopetrope
+
+A wordpress theme based on [dopetrope](http://html5up.net/dopetrope).
+
+![Preview](https://raw.githubusercontent.com/pierreozoux/wordpress-dopetrope/master/screenshot.png)
+
+# How to hack on this project
+
+## Prerequisites to work on this project:
+- [vagrant](http://www.vagrantup.com/)
+- [virtualbox](https://www.virtualbox.org/)
+- [Ansible](http://docs.ansible.com/intro_installation.html)
+- [vagrant-hostsupdater](https://github.com/cogitatio/vagrant-hostsupdater)
+
+
+## How to start working on this project?
+```
+git clone git@github.com:pierreozoux/vagrant-for-wordpress-dopetrope.git
+cd vagrant-for-wordpress-dopetrope
+vagrant up
+cd web/app/themes
+git clone git@github.com:pierreozoux/wordpress-dopetrope.git
+connect to http://dopetrope.dev and profit!
+```
+
+And don't forget to pull request :)
+
+# Old README
 Dopetrope by HTML5 UP
 html5up.net | @n33co
 Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
