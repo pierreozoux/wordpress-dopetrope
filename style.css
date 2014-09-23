@@ -12,7 +12,7 @@ Text Domain: dopetrope
 
 
 @charset 'UTF-8';
-@import url("/wp-content/themes/dopetrope/css/font-awesome.min.css");
+@import url("css/font-awesome.min.css");
 @import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*
@@ -28,7 +28,7 @@ Text Domain: dopetrope
 	body
 	{
 		background: #252122;
-		background-image: url('/wp-content/themes/dopetrope/css/images/bg.png');
+		background-image: url('css/images/bg.png');
 	}
 
 		body.is-loading * {
@@ -744,7 +744,7 @@ Text Domain: dopetrope
 	#main-wrapper
 	{
 		position: relative;
-		background: #f7f7f7 url('/wp-content/themes/dopetrope/css/images/bg.png');
+		background: #f7f7f7 url('css/images/bg.png');
 	}
 
 		#main-wrapper:before
@@ -754,7 +754,7 @@ Text Domain: dopetrope
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url('/wp-content/themes/dopetrope/css/images/bg.png');
+			background: url('css/images/bg.png');
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.1;
@@ -766,7 +766,7 @@ Text Domain: dopetrope
 		
 			#main-wrapper .major h2
 			{
-				background: #f7f7f7 url('/wp-content/themes/dopetrope/css/images/bg.png');
+				background: #f7f7f7 url('css/images/bg.png');
 			}
 	
 	#footer-wrapper
@@ -782,7 +782,7 @@ Text Domain: dopetrope
 			top: 0;
 			left: 0;
 			width: 100%;
-			background: url('/wp-content/themes/dopetrope/css/images/bg.png');
+			background: url('css/images/bg.png');
 			background-size: 100% 100%;
 			z-index: 0;
 			opacity: 0.5;

@@ -6,13 +6,15 @@
 
 (function($) {
 
+var theme_path = window.theme_path
+
 	skel.init({
 		reset: 'full',
 		breakpoints: {
-			'global':	{ range: '*', href: '/wp-content/themes/dopetrope/style.css' },
-			'desktop':	{ range: '641-', href: '/wp-content/themes/dopetrope/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
-			'1000px':	{ range: '641-1200', href: '/wp-content/themes/dopetrope/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
-			'mobile':	{ range: '-640', href: '/wp-content/themes/dopetrope/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
+			'global':	{ range: '*', href: theme_path + '/style.css' },
+			'desktop':	{ range: '641-', href: theme_path + '/css/style-desktop.css', containers: 1200, grid: { gutters: 50 } },
+			'1000px':	{ range: '641-1200', href: theme_path + '/css/style-1000px.css', containers: 960, grid: { gutters: 25 }, viewport: { width: 1024 } },
+			'mobile':	{ range: '-640', href: theme_path + '/css/style-mobile.css', containers: '100%', grid: { collapse: true, gutters: 10 }, viewport: { scalable: false } }
 		}
 	}, {
 		layers: {

@@ -12,6 +12,9 @@
     <meta name="description" content="" />
     <meta name="keywords" content="" />
     <!--[if lte IE 8]><script src="css/ie/html5shiv.js"></script><![endif]-->
+    <script type='text/javascript' > 
+      window.theme_path = "<?php bloginfo('template_directory'); ?>"; 
+    </script>
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/jquery.dropotron.min.js"></script>
     <script src="<?php bloginfo('template_directory'); ?>/js/skel.min.js"></script>
