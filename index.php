@@ -62,7 +62,7 @@
 							<!-- Portfolio -->
 								<section>
 									<header class="major">
-										<h2>My Portfolio</h2>
+										<h2>Flyers</h2>
 									</header>
 									<div class="row">
 										<!– WP LOOP STARTS/ENDS –>
