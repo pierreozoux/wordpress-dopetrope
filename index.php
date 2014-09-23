@@ -65,81 +65,44 @@
 										<h2>My Portfolio</h2>
 									</header>
 									<div class="row">
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic02.jpg" alt="" /></a>
-												<header>
-													<h3>Ipsum feugiat et dolor</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic03.jpg" alt="" /></a>
-												<header>
-													<h3>Sed etiam lorem nulla</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic04.jpg" alt="" /></a>
-												<header>
-													<h3>Consequat et tempus</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
+										<!– WP LOOP STARTS/ENDS –>
+										<?php $my_query = new WP_Query('category_name=flyer&showposts=3&offset=0'); ?>
+										<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+											<div class="4u">
+												<section class="box">
+													<a href="<?php the_permalink() ?>" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic02.jpg" alt="" /></a>
+													<header>
+														<h3><?php the_title(); ?></h3>
+													</header>
+													<p><?php the_excerpt() ?></p>
+													<footer>
+														<a href="<?php the_permalink() ?>" class="button alt">Find out more</a>
+													</footer>
+												</section>
+											</div>
+										<?php endwhile; ?>
+										<!– WP LOOP STARTS/ENDS –>
 									</div>
 									<div class="row">
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic05.jpg" alt="" /></a>
-												<header>
-													<h3>Blandit sed adipiscing</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic06.jpg" alt="" /></a>
-												<header>
-													<h3>Etiam nisl consequat</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
-										<div class="4u">
-											<section class="box">
-												<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic07.jpg" alt="" /></a>
-												<header>
-													<h3>Dolore nisl feugiat</h3>
-												</header>
-												<p>Lorem ipsum dolor sit amet sit veroeros sed amet blandit consequat veroeros lorem blandit  adipiscing et feugiat phasellus tempus dolore ipsum lorem dolore.</p>
-												<footer>
-													<a href="#" class="button alt">Find out more</a>
-												</footer>
-											</section>
-										</div>
+										<!– WP LOOP STARTS/ENDS –>
+										<?php $my_query = new WP_Query('category_name=flyer&showposts=3&offset=3'); ?>
+										<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
+											<div class="4u">
+												<section class="box">
+													<a href="<?php the_permalink() ?>" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic02.jpg" alt="" /></a>
+													<header>
+														<h3><?php the_title(); ?></h3>
+													</header>
+													<p><?php the_excerpt() ?></p>
+													<footer>
+														<a href="<?php the_permalink() ?>" class="button alt">Find out more</a>
+													</footer>
+												</section>
+											</div>
+										<?php endwhile; ?>
+										<!– WP LOOP STARTS/ENDS –>
 									</div>
+									
 								</section>
 
 						</div>
@@ -158,7 +121,7 @@
 										<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 											<div class="6u">
 												<section class="box">
-													<a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic08.jpg" alt="" /></a>
+													<a href="<?php the_permalink() ?>" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic08.jpg" alt="" /></a>
 													<header>
 														<h3><?php the_title(); ?></h3>
 														<p>Posted 45 minutes ago</p>
