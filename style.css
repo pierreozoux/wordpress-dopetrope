@@ -303,6 +303,12 @@ Text Domain: dopetrope
 			border-bottom: solid 1px #ccc;
 		}
 		
+			.box .wp-post-image
+			{
+				position: relative;
+				width: auto;
+			}
+			
 			.box .image.featured
 			{
 				position: relative;
@@ -411,6 +417,13 @@ Text Domain: dopetrope
 					width: auto;
 				}
 
+			.wp-post-image
+			{
+				display: block;
+				width: 100%;
+				margin: 0 0 2em 0;
+			}
+			
 			.image.featured
 			{
 				display: block;

@@ -41,7 +41,7 @@
     <!-- Content -->
     <?php while ( have_posts() ) : the_post(); ?>
       <article class="box post">
-        <a href="#" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic01.jpg" alt="" /></a>
+        <?php the_post_thumbnail(array(783, 290)); ?>
         <header>
           <h2><?php the_title(); ?></h2>
         </header>

@@ -70,7 +70,7 @@
 										<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 											<div class="4u">
 												<section class="box">
-													<a href="<?php the_permalink() ?>" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic02.jpg" alt="" /></a>
+													<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(367, 255)); ?></a>
 													<header>
 														<h3><?php the_title(); ?></h3>
 													</header>
@@ -89,7 +89,7 @@
 										<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 											<div class="4u">
 												<section class="box">
-													<a href="<?php the_permalink() ?>" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic02.jpg" alt="" /></a>
+													<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(367, 255)); ?></a>
 													<header>
 														<h3><?php the_title(); ?></h3>
 													</header>
