@@ -67,6 +67,11 @@
 				top: 1.75em;
 				margin: -4.5em 0 4.25em -3.5em;
 			}
+			
+			.wp-post-image.sidebar
+			{
+				margin-top: -3em;
+			}
 
 			.box.post
 			{
