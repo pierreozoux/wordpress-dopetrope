@@ -12,7 +12,7 @@
                   <?php $my_query = new WP_Query('category_name=events&showposts=5'); ?>
                   <?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
                   <li>
-                    <span class="date">Jan <strong>27</strong></span>
+                    <span class="date"><?php the_field('event_date') ?></span>
                     <h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
                     <p><?php the_excerpt() ?></p>
                   </li>
@@ -116,6 +116,10 @@
           </div>
         </section>
       </div>
-
+<script>
+$('.date').each(function(index, element) {
+    $(element).html($(element).html().replace(/(\d\d)/, "<strong>$1</strong>"));
+});
+</script>
   </body>
 </html>
