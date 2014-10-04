@@ -1,5 +1,4 @@
 <?php get_header();?>
-
 					<!-- Banner -->
 						<section id="banner">
 							<header>
@@ -7,7 +6,6 @@
 								<p>A responsive template by HTML5 UP</p>
 							</header>
 						</section>
-
 					<!-- Intro -->
 						<section id="intro" class="container">
 							<div class="row">
@@ -46,19 +44,15 @@
 								</ul>
 							</footer>
 						</section>
-		
 				</div>
 			</div>
-
 				</div>
 			</div>
-
 		<!-- Main -->
 			<div id="main-wrapper">
 				<div class="container">
 					<div class="row">
 						<div class="12u">
-							
 							<!-- Portfolio -->
 								<section>
 									<header class="major">
@@ -102,14 +96,11 @@
 										<?php endwhile; ?>
 										<!– WP LOOP STARTS/ENDS –>
 									</div>
-									
 								</section>
-
 						</div>
 					</div>
 					<div class="row">
 						<div class="12u">
-
 							<!-- Blog -->
 								<section>
 									<header class="major">
@@ -139,7 +130,6 @@
 										<!– WP LOOP STARTS/ENDS –>
 									</div>
 								</section>
-							
 						</div>
 					</div>
 				</div>
