@@ -112,7 +112,7 @@
 										<?php while ($my_query->have_posts()) : $my_query->the_post(); ?>
 											<div class="6u">
 												<section class="box">
-													<a href="<?php the_permalink() ?>" class="image featured"><img src="<?php bloginfo('template_directory'); ?>/images/pic08.jpg" alt="" /></a>
+													<a href="<?php the_permalink() ?>"><?php the_post_thumbnail(array(580, 272)); ?></a>
 													<header>
 														<h3><?php the_title(); ?></h3>
 														<p>Posted 45 minutes ago</p>
